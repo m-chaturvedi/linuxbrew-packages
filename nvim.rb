@@ -1,4 +1,4 @@
-class NVIM < Formula
+class Nvim < Formula
   desc "Installs Nvim"
   homepage ""
   url "https://github.com/neovim/neovim/releases/download/$VERSION/nvim-linux64.tar.gz"
