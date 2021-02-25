@@ -1,4 +1,4 @@
-class Vifm < Formula
+class Oh-my-zsh < Formula
   desc "Installs VIFM"
   url "git@github.com:ohmyzsh/ohmyzsh.git", :using => :git, :tag => "master"
 
