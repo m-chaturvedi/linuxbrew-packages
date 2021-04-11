@@ -1,6 +1,11 @@
 class Vifm < Formula
   desc "Installs VIFM"
-  url "git@github.com:vifm/vifm.git", :using => :git, :tag => "e9b0f3353"
+  url "git@github.com:vifm/vifm.git",
+    :using => :git,
+    :branch => "master",
+    :tag => "v0.11"
+
+  version "0.11"
 
   def install
     system "touch", "data/vifm-help.txt"
@@ -10,4 +15,5 @@ class Vifm < Formula
     system "make", "install"
   end
 end
+
 
