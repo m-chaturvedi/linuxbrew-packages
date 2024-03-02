@@ -9,6 +9,7 @@ class Fpp < Formula
 
   def install
     libexec.install Dir["*"]
+    # Create a symbolic link to the file libexec/fpp inside bin directory.
     bin.install_symlink libexec/"fpp"
   end
 end

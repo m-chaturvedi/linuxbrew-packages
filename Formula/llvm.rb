@@ -8,6 +8,11 @@ class Llvm < Formula
   sha256 "829f5fb0ebda1d8716464394f97d5475d465ddc7bea2879c0601316b611ff6db"
 
   def install
-    libexec.install Dir["*"]
+    # libexec.install Dir["*"]
+    mv "bin", "#{prefix}"
+    mv "lib", "#{prefix}"
+    mv "include", "#{prefix}"
+    mv "libexec", "#{prefix}"
+    mv "share", "#{prefix}"
   end
 end
